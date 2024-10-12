@@ -1,0 +1,34 @@
+/* Style for admin container */
+.profile-details {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for admin options (hidden by default) */
+.admin-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show admin options when hovering over admin container */
+.profile-details:hover .admin-options {
+    display: block;
+}
+
+/* Style for admin option links */
+.admin-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change color of admin option links on hover */
+.admin-options a:hover {
+    background-color: #f9f9f9;
+}

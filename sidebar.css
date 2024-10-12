@@ -1,0 +1,32 @@
+/* Style for sidebar */
+.sidebar {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjusted to show sidebar initially */
+    background-color: var(--bg);
+    padding-top: 70px; /* Adjusted for header height */
+    transition: left 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  /* Show sidebar menu items with icons only */
+  .sidebar ul li a {
+    color: var(--font);
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 10px;
+  }
+  
+  /* Hide menu item text and only show icons */
+  .sidebar ul li a span {
+    display: none; /* Hide menu item text */
+    margin-left: 10px; /* Add space between icon and menu item */
+  }
+  
+  /* Show menu item text on hover */
+  .sidebar ul li a:hover span {
+    display: inline; /* Show menu item text */
+  }
+  

@@ -1,0 +1,74 @@
+:root {
+  --bg: #15015f;  /* Background color */
+  --font: #ffffff; /* Font color */
+  --indiv: #8e6fff; /* Individual color */
+  --hover: #2802b4; /* Hover color */
+  --active: #ac96fc; /* Active color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--bg);
+  color: var(--font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header is on top */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: var(--font);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.company-name {
+  font-size: 1.5rem;
+}
+
+.admin {
+  position: relative;
+  padding-right: 60px;
+}
+
+.admin img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--indiv);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.admin img:hover{
+  background-color: var(--hover);
+}
+
+.admin-options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: var(--bg);
+  padding: 10px;
+  display: none;
+}
+
+.admin-options a {
+  color: var(--font);
+  text-decoration: none;
+  display: block;
+}
+
+.admin-options a:hover {
+  background-color: var(--hover);
+}
